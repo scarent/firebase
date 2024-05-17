@@ -3,3 +3,16 @@ body{
     
 
 }
+h1,p{
+    text-align: center;
+    font-size: 25px;
+
+}
+div{
+    text-align: center;
+}
+form{
+    margin: auto;
+    text-align: center;
+    padding: 0%;
+}

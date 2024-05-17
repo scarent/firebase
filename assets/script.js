@@ -17,11 +17,7 @@ const registrar = ()=>{   //variable flecha para gatillar una funcion
     let vrut = erut.value;
     let vcorreo = ecorreo.value;
     //creo el objeto
-    let objeto = {nombre:vnombre};
-    let objetoap = {apellido:vapellido};
-    let objetofecha = {fecha:vfechanac};
-    let objetorut = {rut:vrut};
-    let objetocorr = {correo:vcorreo}
+    let objeto = {nombre:vnombre, apellido:vapellido,fecha:vfechanac,rut:vrut,correo:vcorreo};
     console.log(objeto);
     //validacion del objeto
     registrarpersona(objeto).then(()=>{
@@ -30,29 +26,6 @@ const registrar = ()=>{   //variable flecha para gatillar una funcion
         alert("algo ocurrio");
         alert(r);
     });
-    registrarpersona(objetoap).then(()=>{
-        alert("registrado con exito");
-    }).catch((r)=>{
-        alert("algo ocurrio");
-        alert(r);
-    })
-    registrarpersona(objetofecha).then(()=>{
-        alert("registrado con exito");
-    }).catch((r)=>{
-        alert("algo ocurrio");
-        alert(r);
-    })
-    registrarpersona(objetorut).then(()=>{
-        alert("registrado con exito");
-    }).catch((r)=>{
-        alert("algo ocurrio");
-        alert(r);
-    })
-    registrarpersona(objetocorr).then(()=>{
-        alert("registrado con exito");
-    }).catch((r)=>{
-        alert("algo ocurrio");
-        alert(r);
-    })
+    
 
 }
